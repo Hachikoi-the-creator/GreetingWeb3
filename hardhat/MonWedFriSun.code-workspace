@@ -1,0 +1,18 @@
+{
+  "folders": [
+	{
+		"name": "novo-bakery",
+		"path": "..\\..\\..\\novo-bakery"
+	},
+	{
+		"name": "Bakery-project",
+		"path": "..\\..\\..\\Bakery-project"
+	},
+	{
+		"path": "..\\.."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "novo-bakery"
+  }
+}
