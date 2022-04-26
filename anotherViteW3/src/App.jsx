@@ -3,9 +3,10 @@ import { ethers } from "ethers";
 
 function App() {
   const [depositValue, setDepositValue] = useState(0);
-  const [greet, setGreet] = useState("");
+  //TODO: may want to add default values
+  const [greet, setGreet] = useState("Hey!");//here
   const [greetingValue, setGreetingValue] = useState("");
-  const [balance, setBalance] = useState();
+  const [balance, setBalance] = useState(0);//here
 
   const provider = new ethers.providers.Web3Provider(window.ethereum);
   const signer = provider.getSigner();
@@ -110,14 +111,14 @@ function App() {
   };
 
   return (
-    <div className="container .bg-primary.bg-gradient">
-      <div className="row mt-5">
-        <div className="col">
+    <div className="container .bg-primary">
+      <div className="row mt-5 .bg-primary">
+        <div className="col .bg-primary">
           <h3>{greet}</h3>
           <p>Contract Balance: {balance} ETH</p>
         </div>
 
-        <div className="col">
+        <div className="col .bg-primary">
           <div className="mb-3">
             <h4>Deposit ETH</h4>
             <form onSubmit={handleDepositSubmit}>
